@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <title>Digitális rendszerek II.</title>
+</head>
+<body style="background:transparent; font-size:10pt; font-family:tahoma">
+    
+    <br><br><br><br>    
+    <font style="font-size:14pt"><b>Digitális rendszerek II.</b></font>
+    <br><br>
+    <video id="videom" width="500" controls>
+        <source src="video/digit.mp4" type="video/mp4">
+        A böngésződ nem támogatja a HTML videók lejátszását.
+    </video>
+    <br>
+    <button onclick="indit_leallit()">indítás / leállítás</button>
+    <script>
+        var videom = document.getElementById('videom');
+
+        function indit_leallit() {
+            if (videom.paused) {
+                videom.play();
+            }
+            else {
+                videom.pause();
+            }
+        }
+    </script>
+    <br><br><br><br>   
+    <b>Tematika</b>
+    <ol style="color: blue;">
+        <li>Ea: Digitális áramkörök jellemzői, felépítése, Integrált áramkörök technológia szerinti osztályozása. TTL
+            technológiák ismertetése, 
+            Gyak: Digitális Rendszertechnikai laboratórium bemutatása, érintésvédelem, munkavédelmi oktatás;
+            Bevezetés a Számítógéppel segített tervező rendszer használatához.
+        <li>Ea: TTL NAND kapu működésének elemzése, TTL nyílt kollektoros kapu, Alacsony teljesítményű, nagy
+            sebességű logikai kapuk felépítése.
+            Gyak: Önálló számítógépes kapcsolási rajz készítése.
+        <li>Ea: CMOS technológiájú kapuk, BiCMOS kapuk működése. Áramköri jellemzők.
+            Gyak: Mérőműszerek használata.
+        <li>Ea: Funkcionális áramkörök tervezése MSI áramkörök felhasználásával. Aritmetikai áramkörök I: fél
+            összeadó, teljes összeadó, párhuzamos összeadó, BCD kódú összeadó, átvitelgyorsítás „carry-look
+            ahead” összeadó.
+            Gyak: 1. Tervezési feladat – kombinációs hálózat, huzalozás, stb.. önálló munka.
+        <li>Ea: Aritmetikai áramkörök II: Komplemens aritmetika, teljes összeadó/kivonó, bináris szorzás és osztás
+            algoritmusa. 
+            Gyak: 1. Tervezési feladat – megvalósítás önálló munka.            
+        <li>Ea: Digitális komparátorok, multiplexerek, demultiplexerek. Kombinációs hálózatok megvalósítása MUX
+            ill. DEMUX áramkörökkel. A paritás fogalma, egyszerű és összetett paritás generálása.
+            Gyak: 2. Tervezési feladat – számítógéppel segített tervezés.
+        <li>Ea: Léptetőregiszterek. Tervezés léptetőregiszterekkel. Számláló áramkörök (Szinkron és aszinkron). BCD
+            számláló. Kimeneti tranziensek, hazárdmentes számlálók.
+            Gyak: 3. tervezési feladat - számítógéppel segített tervezés.
+        <li>Rektori Szünet.
+        <li>Ea: Zárthelyi Feladat
+            Gyak: Komplex digitális áramkörök mérése: számláló, multiplexer, demultiplexer, ALU - – laboratóriumi
+            gyakorlat (EB134)
+        <li>Ea: Memória-áramkörök felépítése és jellemzése: írható és olvasható memóriák. Statikus RAM 
+            felépítése. Statikus és dinamikus RAM memóriák. ROM jellegű memóriák. Memória áramkörök 
+            alkalmazása.
+            Gyak: Programozható logikai kapumátrix - – laboratóriumi gyakorlat Mixi21 – PAL-GAL emulátor.
+        <li>Ea: Memória-áramkörök felépítése és jellemzése: írható és olvasható memóriák. Statikus RAM 
+            felépítése. Statikus és dinamikus RAM memóriák. ROM jellegű memóriák. Memória áramkörök 
+            alkalmazása.
+            Gyak: Programozható logikai kapumátrix - – laboratóriumi gyakorlat Mixi21 – PAL-GAL emulátor.
+        <li>Ea: Adatstruktúra vezérlés. Sínrendszerek, 
+            Gyak: Digitális áramkörök jellemzőinek mérése – laboratóriumi gyakorlat (EB220).
+        <li>Ea: Zárthelyi feladat;
+            Gyak: pótlás.
+    </ol>
+    </body>
+</html>
