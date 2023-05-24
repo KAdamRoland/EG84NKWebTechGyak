@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Vélemény</title>
+
+    <style>
+        article, section, aside, nav, header, footer{display: block;}
+
+        .fejlec{
+            font-size: 18pt;
+            font-family: Hevletica;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .urlap{
+            padding: 30px;
+            font-size: 12pt;
+            font-family: Hevletica;
+            background: #ccffff;
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #888888;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header id="fejlec" class="fejlec">
+        Kérem adja meg a véleményét a weblapomról!
+    </header>
+
+    <section id="tartalom" class="urlap">
+        <form id="urlap" name="urlap" action="feldolgozo.php" method="GET" target="_self">
+
+            Név: <input type="text" id="nev" name="nev" placeholder="Írd be a neved" autofocus
+            autocomplete="off" required pattern="[a-zA-ZöüóőúéáűíÖÜÓŐÚÉÁŰÍ]{3,50}" />
+            <br><br>
+
+            Neme: <input type="text" name="nem" list="nem">
+
+            <datalist id="nem">
+                <option value="Nő">d</option>
+                <option value="Férfi"></option>
+                <option value="Egyéb"></option>
+            </datalist>
+
+            <br /><br />
+
+            Életkor: <input type="number" name="eletkor" min="10" max="80" style="width: 40px;">
+            <br /><br />
+
+            Értékelés (1-5): <input type="text" id="ertekeles" name="ertekeles" placeholder="Értékelésed"
+            autocomplete="off" required pattern="[1-5]{1}" />
+            <br /><br />
+
+            Önbizalma az értékelésben: &nbsp;&nbsp;&nbsp;0<input type="range" name="onbizalom" min="0"
+            max="100" style="width: 300px;">100
+        </form>
+
+        <br><br><br>
+
+        <input type="submit" value="ELKÜLDÖM" form="urlap" formaction="feldolgozo.php"
+        formmethod="POST" />
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Elküldöm ellenőrzés nélkül" form="urlap" formnovalidate
+        formtarget="ujablak" />
+
+    </section>
+
+    
+</body>
+</html>
